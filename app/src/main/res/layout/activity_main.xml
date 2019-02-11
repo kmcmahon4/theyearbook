@@ -48,7 +48,7 @@
         android:layout_marginRight="34dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Software development is my passion"
+        android:text=" Kerri McMahon -  i <3 appdev"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
