@@ -32,6 +32,8 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="83dp"
         android:layout_marginRight="83dp"
+        android:layout_marginBottom="123dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -43,15 +45,18 @@
         android:layout_height="83dp"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
+        android:layout_marginBottom="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text=" Kerri McMahon -  i <3 appdev"
+        android:text=" Kerri McMahon -  i love appdev"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBar3" />
 
     <ProgressBar
         android:id="@+id/progressBar3"
@@ -64,7 +69,23 @@
         android:layout_marginEnd="198dp"
         android:layout_marginRight="198dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/linkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:text="CLICK HERE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
