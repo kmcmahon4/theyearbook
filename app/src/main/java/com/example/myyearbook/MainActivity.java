@@ -10,12 +10,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
 
 
         Button btn = (Button) findViewById(R.id.linkButton);
@@ -26,8 +29,33 @@ public class MainActivity extends Activity {
                 Intent myWebLink = new Intent(android.content.Intent.ACTION_VIEW);
                 myWebLink.setData(Uri.parse("https://www.cnn.com/2019/02/25/perspectives/samsung-galaxy-foldable-phone/index.html"));
                 startActivity(myWebLink);
+
+
             }
 
         });
-}
+
+        Button webbtn = (Button) findViewById(R.id.webbtn);
+//        webbtn.setOnClickListener(new OnClickListener() {
+//
+//
+//            public void onClick(View v) {
+//                Intent openWeb = new Intent(MainActivity.this, webActivity1.class);
+//
+//                startActivity(openWeb);
+//
+//
+//            }
+//
+//        });
+        webbtn.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent openWeb = new Intent(this, webActivity1.class);
+
+        startActivity(openWeb);
+
+    }
 }

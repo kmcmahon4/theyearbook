@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Myyearbook</string>
+    <string name="title_activity_web">webActivity</string>
 </resources>
